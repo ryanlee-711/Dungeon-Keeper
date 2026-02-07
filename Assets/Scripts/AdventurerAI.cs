@@ -33,9 +33,9 @@ public class AdventurerAI : MonoBehaviour
     [Tooltip("AI won't see traps until this close")]
     [SerializeField] private int trapDetectionRange = 2;
 
-    private int currentHealth;
-    private Vector2Int currentPosition;
-    private Vector2Int lastPosition;
+    public int currentHealth;
+    public Vector2Int currentPosition;
+    public Vector2Int lastPosition;
     private readonly HashSet<Vector2Int> exploredRooms = new HashSet<Vector2Int>();
 
     // D* Lite data structures
@@ -696,7 +696,7 @@ public class AdventurerAI : MonoBehaviour
         while (currentHealth > 0 && monster.Health > 0)
         {
             monster.TakeDamage(attackPower);
-            if (monster.Health > 0)
+            if (monster.Health >= 0)
                 TakeDamage(monster.AttackPower);
         }
 

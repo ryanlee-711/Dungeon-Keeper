@@ -1,0 +1,3744 @@
+fileFormatVersion: 2
+guid: 084106ab97be7534ba5480214697fb08
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8538964301396492588
+    second: wizardCast_0
+  - first:
+      213: 8296295111716708
+    second: wizardCast_1
+  - first:
+      213: 289243617887635067
+    second: wizardCast_2
+  - first:
+      213: -9162158953139805398
+    second: wizardCast_3
+  - first:
+      213: -2724751222541427980
+    second: wizardCast_4
+  - first:
+      213: 5864844773492063891
+    second: wizardCast_5
+  - first:
+      213: 7040806221805271844
+    second: wizardCast_6
+  - first:
+      213: 8923807636571115685
+    second: wizardCast_7
+  - first:
+      213: 7698897319592039155
+    second: wizardCast_8
+  - first:
+      213: 3175688517710605944
+    second: wizardCast_9
+  - first:
+      213: -4965766079850253437
+    second: wizardCast_10
+  - first:
+      213: -7370151398693812035
+    second: wizardCast_11
+  - first:
+      213: -8720296078875952419
+    second: wizardCast_12
+  - first:
+      213: 7478004436091966041
+    second: wizardCast_13
+  - first:
+      213: 4518082236470119288
+    second: wizardCast_14
+  - first:
+      213: 2199740481801291193
+    second: wizardCast_15
+  - first:
+      213: 2032843412202331572
+    second: wizardCast_16
+  - first:
+      213: 5929360731316985239
+    second: wizardCast_17
+  - first:
+      213: -5468318473857463097
+    second: wizardCast_18
+  - first:
+      213: 5601293442817737440
+    second: wizardCast_19
+  - first:
+      213: 8052029018332019587
+    second: wizardCast_20
+  - first:
+      213: -8026843095662476279
+    second: wizardCast_21
+  - first:
+      213: -8381454243191367014
+    second: wizardCast_22
+  - first:
+      213: 1229145520324240949
+    second: wizardCast_23
+  - first:
+      213: 3743542890137764950
+    second: wizardCast_24
+  - first:
+      213: -7234857395086951758
+    second: wizardCast_25
+  - first:
+      213: 8767653382343430734
+    second: wizardCast_26
+  - first:
+      213: 189138377838389175
+    second: wizardCast_27
+  - first:
+      213: -7064865640440630199
+    second: wizardCast_28
+  - first:
+      213: 2000454587364560504
+    second: wizardCast_29
+  - first:
+      213: 7603910840878888224
+    second: wizardCast_30
+  - first:
+      213: 3471530796887342214
+    second: wizardCast_31
+  - first:
+      213: 7264230600688784183
+    second: wizardCast_32
+  - first:
+      213: 1057221587113338877
+    second: wizardCast_33
+  - first:
+      213: -5583313511660797358
+    second: wizardCast_34
+  - first:
+      213: 3032804542968354808
+    second: wizardCast_35
+  - first:
+      213: -5516106915307118816
+    second: wizardCast_36
+  - first:
+      213: 1377424356343503286
+    second: wizardCast_37
+  - first:
+      213: 586914964711767582
+    second: wizardCast_38
+  - first:
+      213: -2151634399429885875
+    second: wizardCast_39
+  - first:
+      213: -9063259293240787517
+    second: wizardCast_40
+  - first:
+      213: -1187138828120496195
+    second: wizardCast_41
+  - first:
+      213: -2924190560237210880
+    second: wizardCast_42
+  - first:
+      213: 990015887856993116
+    second: wizardCast_43
+  - first:
+      213: 8530248226906955968
+    second: wizardCast_44
+  - first:
+      213: 7235256813646176247
+    second: wizardCast_45
+  - first:
+      213: 7105065937066424186
+    second: wizardCast_46
+  - first:
+      213: -8752510229745925304
+    second: wizardCast_47
+  - first:
+      213: 950964817146950463
+    second: wizardCast_48
+  - first:
+      213: -6551625095911613472
+    second: wizardCast_49
+  - first:
+      213: 7521257326595124916
+    second: wizardCast_50
+  - first:
+      213: 3359661307598824057
+    second: wizardCast_51
+  - first:
+      213: -3558726628795700980
+    second: wizardCast_52
+  - first:
+      213: 7451609224151891431
+    second: wizardCast_53
+  - first:
+      213: -709171552378611044
+    second: wizardCast_54
+  - first:
+      213: 4707881286293234298
+    second: wizardCast_55
+  - first:
+      213: 3431617737186864241
+    second: wizardCast_56
+  - first:
+      213: 3224290460750269298
+    second: wizardCast_57
+  - first:
+      213: 8878972501980908560
+    second: wizardCast_58
+  - first:
+      213: 3033749151097048358
+    second: wizardCast_59
+  - first:
+      213: 2383327674627179437
+    second: wizardCast_60
+  - first:
+      213: 6693379636458842374
+    second: wizardCast_61
+  - first:
+      213: -1950390824235713861
+    second: wizardCast_62
+  - first:
+      213: -2992279074731525957
+    second: wizardCast_63
+  - first:
+      213: 5167403416465424929
+    second: wizardCast_64
+  - first:
+      213: -1980124559324279430
+    second: wizardCast_65
+  - first:
+      213: 4762576460492411744
+    second: wizardCast_66
+  - first:
+      213: -7125183763015444340
+    second: wizardCast_67
+  - first:
+      213: -1948026013848737360
+    second: wizardCast_68
+  - first:
+      213: 6372078573694667442
+    second: wizardCast_69
+  - first:
+      213: -5297291041419886488
+    second: wizardCast_70
+  - first:
+      213: -4555098581552044810
+    second: wizardCast_71
+  - first:
+      213: -4215829660169415971
+    second: wizardCast_72
+  - first:
+      213: 4946167318928381097
+    second: wizardCast_73
+  - first:
+      213: -3437738138785210747
+    second: wizardCast_74
+  - first:
+      213: -8405436186462874562
+    second: wizardCast_75
+  - first:
+      213: -945453861100027486
+    second: wizardCast_76
+  - first:
+      213: -2131410358890872377
+    second: wizardCast_77
+  - first:
+      213: 3190478901909406207
+    second: wizardCast_78
+  - first:
+      213: -406194704931717505
+    second: wizardCast_79
+  - first:
+      213: 5836684320944971046
+    second: wizardCast_80
+  - first:
+      213: 1930201912924332334
+    second: wizardCast_81
+  - first:
+      213: -6153429163108777401
+    second: wizardCast_82
+  - first:
+      213: 4666394523152415080
+    second: wizardCast_83
+  - first:
+      213: -5058006417750386527
+    second: wizardCast_84
+  - first:
+      213: -6349085559817788504
+    second: wizardCast_85
+  - first:
+      213: 3559197987555112693
+    second: wizardCast_86
+  - first:
+      213: 1971327590105251088
+    second: wizardCast_87
+  - first:
+      213: -1597634032434986768
+    second: wizardCast_88
+  - first:
+      213: 918579374552386502
+    second: wizardCast_89
+  - first:
+      213: -1758140863554080702
+    second: wizardCast_90
+  - first:
+      213: -2832289013916736774
+    second: wizardCast_91
+  - first:
+      213: 7626970620536000545
+    second: wizardCast_92
+  - first:
+      213: -1772989188469400218
+    second: wizardCast_93
+  - first:
+      213: 986684738277456092
+    second: wizardCast_94
+  - first:
+      213: -7913265008102936258
+    second: wizardCast_95
+  - first:
+      213: -3617453808411576089
+    second: wizardCast_96
+  - first:
+      213: 2210586921379912015
+    second: wizardCast_97
+  - first:
+      213: 5818602096855239328
+    second: wizardCast_98
+  - first:
+      213: 6567969624872133164
+    second: wizardCast_99
+  - first:
+      213: 1054383805739260164
+    second: wizardCast_100
+  - first:
+      213: -6650648249272730566
+    second: wizardCast_101
+  - first:
+      213: 968782490495798471
+    second: wizardCast_102
+  - first:
+      213: -7562584986068839523
+    second: wizardCast_103
+  - first:
+      213: 5263749797166596676
+    second: wizardCast_104
+  - first:
+      213: 5464267459563820025
+    second: wizardCast_105
+  - first:
+      213: 2763937572791429383
+    second: wizardCast_106
+  - first:
+      213: 3071430917820493997
+    second: wizardCast_107
+  - first:
+      213: 6329712080425367694
+    second: wizardCast_108
+  - first:
+      213: 8902958092223064297
+    second: wizardCast_109
+  - first:
+      213: 4723574269735095592
+    second: wizardCast_110
+  - first:
+      213: 1248322196244612941
+    second: wizardCast_111
+  - first:
+      213: -4636338342510180735
+    second: wizardCast_112
+  - first:
+      213: 361236195322676911
+    second: wizardCast_113
+  - first:
+      213: -5962980633149400937
+    second: wizardCast_114
+  - first:
+      213: -5647923020580084948
+    second: wizardCast_115
+  - first:
+      213: 2890896238805303964
+    second: wizardCast_116
+  - first:
+      213: -762393724814498920
+    second: wizardCast_117
+  - first:
+      213: 1415311028937273382
+    second: wizardCast_118
+  - first:
+      213: 3953771626445667472
+    second: wizardCast_119
+  - first:
+      213: 2676332379146430980
+    second: wizardCast_120
+  - first:
+      213: -8265254029864348742
+    second: wizardCast_121
+  - first:
+      213: -1184914504290876097
+    second: wizardCast_122
+  - first:
+      213: -4527126508973539329
+    second: wizardCast_123
+  - first:
+      213: 822723539061399818
+    second: wizardCast_124
+  - first:
+      213: -4609024692947813890
+    second: wizardCast_125
+  - first:
+      213: -4613218376066484139
+    second: wizardCast_126
+  - first:
+      213: 6710797661726719868
+    second: wizardCast_127
+  - first:
+      213: -7133153229722780347
+    second: wizardCast_128
+  - first:
+      213: 4166243834728683649
+    second: wizardCast_129
+  - first:
+      213: 6482159528179895709
+    second: wizardCast_130
+  - first:
+      213: -1970494385873231472
+    second: wizardCast_131
+  - first:
+      213: -355549733275379825
+    second: wizardCast_132
+  - first:
+      213: 1519135955495919627
+    second: wizardCast_133
+  - first:
+      213: 560743388082576362
+    second: wizardCast_134
+  - first:
+      213: -2606366267208458822
+    second: wizardCast_135
+  - first:
+      213: -6242424627199776884
+    second: wizardCast_136
+  - first:
+      213: -3627632324580391109
+    second: wizardCast_137
+  - first:
+      213: 6297462429239454448
+    second: wizardCast_138
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: wizardCast_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2048
+        height: 2048
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4de358195318f7980800000000000000
+      internalID: -8538964301396492588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 862
+        width: 124
+        height: 1186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46fe51bbf697d1000800000000000000
+      internalID: 8296295111716708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 2038
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b76cdb9b989930400800000000000000
+      internalID: 289243617887635067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 2043
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23ef6ea9f879d080800000000000000
+      internalID: -9162158953139805398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_4
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 2033
+        width: 249
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa5b1f033dbf2ad0800000000000000
+      internalID: -2724751222541427980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_5
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 2041
+        width: 97
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39efcca8f3d146150800000000000000
+      internalID: 5864844773492063891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_6
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 2043
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b301774f7f5b160800000000000000
+      internalID: 7040806221805271844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_7
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 2035
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a05dbdd3cbb7db70800000000000000
+      internalID: 8923807636571115685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_8
+      rect:
+        serializedVersion: 2
+        x: 1233
+        y: 2033
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f29d78525af7da60800000000000000
+      internalID: 7698897319592039155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_9
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 2043
+        width: 79
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e6d6f91ef421c20800000000000000
+      internalID: 3175688517710605944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_10
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 2042
+        width: 29
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38377d46f0e061bb0800000000000000
+      internalID: -4965766079850253437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_11
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 2027
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db8c1040a56f7b990800000000000000
+      internalID: -7370151398693812035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_12
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 2037
+        width: 149
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddafd5a1be84bf680800000000000000
+      internalID: -8720296078875952419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_13
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 2033
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9529e0a1a6537c760800000000000000
+      internalID: 7478004436091966041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_14
+      rect:
+        serializedVersion: 2
+        x: 1636
+        y: 2031
+        width: 75
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87bcdc23bd373be30800000000000000
+      internalID: 4518082236470119288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_15
+      rect:
+        serializedVersion: 2
+        x: 1750
+        y: 2011
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b500df305c078e10800000000000000
+      internalID: 2199740481801291193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_16
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 2037
+        width: 47
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bd105c105c163c10800000000000000
+      internalID: 2032843412202331572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_17
+      rect:
+        serializedVersion: 2
+        x: 1873
+        y: 2037
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d9c478b22594250800000000000000
+      internalID: 5929360731316985239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_18
+      rect:
+        serializedVersion: 2
+        x: 1901
+        y: 2043
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc05070251ac14b0800000000000000
+      internalID: -5468318473857463097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_19
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 2009
+        width: 51
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e240e595bacbbd40800000000000000
+      internalID: 5601293442817737440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_20
+      rect:
+        serializedVersion: 2
+        x: 2031
+        y: 2042
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b31de0bbd8ebf60800000000000000
+      internalID: 8052029018332019587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_21
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 2034
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 904cd378bbcea9090800000000000000
+      internalID: -8026843095662476279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_22
+      rect:
+        serializedVersion: 2
+        x: 1893
+        y: 2035
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a536dc5c71fab80800000000000000
+      internalID: -8381454243191367014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_23
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 2019
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5366034a65dce0110800000000000000
+      internalID: 1229145520324240949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_24
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 2013
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 654c918ac6cb3f330800000000000000
+      internalID: 3743542890137764950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_25
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 2007
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bafb35f78f989b90800000000000000
+      internalID: -7234857395086951758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_26
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 2001
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4215585c46fca970800000000000000
+      internalID: 8767653382343430734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_27
+      rect:
+        serializedVersion: 2
+        x: 1601
+        y: 2012
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b763704a54ff9200800000000000000
+      internalID: 189138377838389175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_28
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 1973
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9447cab912e84fd90800000000000000
+      internalID: -7064865640440630199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_29
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 2003
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87e4a2d29da03cb10800000000000000
+      internalID: 2000454587364560504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_30
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 2002
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025f35e5f94868960800000000000000
+      internalID: 7603910840878888224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_31
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 1999
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c7c47edda5d2030800000000000000
+      internalID: 3471530796887342214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_32
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 2001
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733d3986e3bbfc460800000000000000
+      internalID: 7264230600688784183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_33
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 2003
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df7e3cc9e610cae00800000000000000
+      internalID: 1057221587113338877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_34
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 2004
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 252c1db51f51482b0800000000000000
+      internalID: -5583313511660797358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_35
+      rect:
+        serializedVersion: 2
+        x: 1950
+        y: 1999
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f7d1d0d9afa61a20800000000000000
+      internalID: 3032804542968354808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_36
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 1999
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f1b027cf9d273b0800000000000000
+      internalID: -5516106915307118816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_37
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 1994
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b953d877289d1310800000000000000
+      internalID: 1377424356343503286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_38
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 1994
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e71010d04252800800000000000000
+      internalID: 586914964711767582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_39
+      rect:
+        serializedVersion: 2
+        x: 1871
+        y: 1993
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d40887fd9ebd322e0800000000000000
+      internalID: -2151634399429885875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_40
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 1991
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cdff1721b5d83280800000000000000
+      internalID: -9063259293240787517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_41
+      rect:
+        serializedVersion: 2
+        x: 1993
+        y: 1991
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7edca868f668fe0800000000000000
+      internalID: -1187138828120496195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_42
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 1983
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003b281bd203b67d0800000000000000
+      internalID: -2924190560237210880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_43
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 1987
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5385b5643e3dbd00800000000000000
+      internalID: 990015887856993116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_44
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 1983
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c0e1b23197816670800000000000000
+      internalID: 8530248226906955968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_45
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1978
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ffda1cecbbc86460800000000000000
+      internalID: 7235256813646176247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_46
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 1977
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a77729453d34a9260800000000000000
+      internalID: 7105065937066424186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_47
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 1978
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 843850f9156d88680800000000000000
+      internalID: -8752510229745925304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_48
+      rect:
+        serializedVersion: 2
+        x: 1701
+        y: 1979
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3330f77671823d00800000000000000
+      internalID: 950964817146950463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_49
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 1969
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb57a0ffa3f315a0800000000000000
+      internalID: -6551625095911613472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_50
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 1967
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bea10070bfd06860800000000000000
+      internalID: 7521257326595124916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_51
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1917
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9726d05b82aef9e20800000000000000
+      internalID: 3359661307598824057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_52
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1812
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c09a8ed6cfcdc9ec0800000000000000
+      internalID: -3558726628795700980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_53
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1792
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7edf89aeb1f696760800000000000000
+      internalID: 7451609224151891431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_54
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1765
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9a19affa348826f0800000000000000
+      internalID: -709171552378611044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_55
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1753
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72a7322611c55140800000000000000
+      internalID: 4707881286293234298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1730
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ce3f5862e8f9f20800000000000000
+      internalID: 3431617737186864241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_57
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1715
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b43bd471bfebc20800000000000000
+      internalID: 3224290460750269298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_58
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1708
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c880f9272783b70800000000000000
+      internalID: 8878972501980908560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_59
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1712
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d48c887ca0a1a20800000000000000
+      internalID: 3033749151097048358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_60
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1694
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3c28584e7431120800000000000000
+      internalID: 2383327674627179437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_61
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1689
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60966f9f059a3ec50800000000000000
+      internalID: 6693379636458842374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_62
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1695
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbabf3401e1dee4e0800000000000000
+      internalID: -1950390824235713861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_63
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1686
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb8fac9090a4976d0800000000000000
+      internalID: -2992279074731525957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_64
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1669
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 122cf89770e46b740800000000000000
+      internalID: 5167403416465424929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_65
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1666
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d0376543f2584e0800000000000000
+      internalID: -1980124559324279430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_66
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1664
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 063994fbe02181240800000000000000
+      internalID: 4762576460492411744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_67
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1647
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c88551e4e134e1d90800000000000000
+      internalID: -7125183763015444340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_68
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1659
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b9635759a837f4e0800000000000000
+      internalID: -1948026013848737360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_69
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1639
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bac2f9b3bb2e6850800000000000000
+      internalID: 6372078573694667442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_70
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1621
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8600f443ddd3c76b0800000000000000
+      internalID: -5297291041419886488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_71
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1471
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f464b959f909c0c0800000000000000
+      internalID: -4555098581552044810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1445
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd2db00b24d5e75c0800000000000000
+      internalID: -4215829660169415971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_73
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1413
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a45f5c78f054a440800000000000000
+      internalID: 4946167318928381097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_74
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1392
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58e15ee6063ba40d0800000000000000
+      internalID: -3437738138785210747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_75
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1347
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e349aa38254e95b80800000000000000
+      internalID: -8405436186462874562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_76
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 1352
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a18c99f8b211e2f0800000000000000
+      internalID: -945453861100027486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_77
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 1353
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1c8bf3295bb62e0800000000000000
+      internalID: -2131410358890872377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_78
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1330
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff140bb48abd64c20800000000000000
+      internalID: 3190478901909406207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_79
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 1335
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e76e66118ec5af0800000000000000
+      internalID: -406194704931717505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_80
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 1311
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d54004771100150800000000000000
+      internalID: 5836684320944971046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_81
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1303
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2162a4c96479ca10800000000000000
+      internalID: 1930201912924332334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_82
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1278
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7424f5647c0aa9aa0800000000000000
+      internalID: -6153429163108777401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_83
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1254
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869f35e581d52c040800000000000000
+      internalID: 4666394523152415080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_84
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1237
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8975626f95ec9b0800000000000000
+      internalID: -5058006417750386527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_85
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1238
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a3af7e725483e7a0800000000000000
+      internalID: -6349085559817788504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_86
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 1245
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6f18556bfc46130800000000000000
+      internalID: 3559197987555112693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_87
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 1233
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d7628afff8b5b10800000000000000
+      internalID: 1971327590105251088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_88
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 1232
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f043a7ef4014d9e0800000000000000
+      internalID: -1597634032434986768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_89
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1224
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cb023603137fbc00800000000000000
+      internalID: 918579374552386502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_90
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1209
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 240b2ca1334d997e0800000000000000
+      internalID: -1758140863554080702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_91
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1201
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af26040e520b1b8d0800000000000000
+      internalID: -2832289013916736774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_92
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1191
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1209365be5178d960800000000000000
+      internalID: 7626970620536000545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_93
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1193
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d5cae0ab31567e0800000000000000
+      internalID: -1772989188469400218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_94
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1193
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8b352ba8861bd00800000000000000
+      internalID: 986684738277456092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_95
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1188
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e31fe72c66f6e2290800000000000000
+      internalID: -7913265008102936258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_96
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 1191
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e87e366de83ccdc0800000000000000
+      internalID: -3617453808411576089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_97
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1185
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4959f1c7159dae10800000000000000
+      internalID: 2210586921379912015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_98
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 1184
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa466067c3dfb050800000000000000
+      internalID: 5818602096855239328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_99
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1178
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c222f02439d162b50800000000000000
+      internalID: 6567969624872133164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_100
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 1183
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40953062c7ce1ae00800000000000000
+      internalID: 1054383805739260164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_101
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1173
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c760867a624b3a0800000000000000
+      internalID: -6650648249272730566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_102
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1176
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccce92da8ec17d00800000000000000
+      internalID: 968782490495798471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_103
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 1175
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d931aa1060d4c0790800000000000000
+      internalID: -7562584986068839523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_104
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1172
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44246ae4d889c0940800000000000000
+      internalID: 5263749797166596676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_105
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 1163
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f31705bd4af4db40800000000000000
+      internalID: 5464267459563820025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_106
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1168
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709a697149a7b5620800000000000000
+      internalID: 2763937572791429383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_107
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1165
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0b7d8852aef9a20800000000000000
+      internalID: 3071430917820493997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_108
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 1144
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e88b044d997a7d750800000000000000
+      internalID: 6329712080425367694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_109
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1141
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e825290739ad8b70800000000000000
+      internalID: 8902958092223064297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_110
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1140
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82d4cb195c18d8140800000000000000
+      internalID: 4723574269735095592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_111
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1134
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4745607c6ee25110800000000000000
+      internalID: 1248322196244612941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_112
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 1123
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 186482487da68afb0800000000000000
+      internalID: -4636338342510180735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_113
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 1125
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6c83ed76e530500800000000000000
+      internalID: 361236195322676911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_114
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1119
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 798989615bc3f3da0800000000000000
+      internalID: -5962980633149400937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_115
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 1087
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c23a29fcfeb8e91b0800000000000000
+      internalID: -5647923020580084948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_116
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 1093
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92c08400d68e1820800000000000000
+      internalID: 2890896238805303964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_117
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 1063
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893e17552fe6b65f0800000000000000
+      internalID: -762393724814498920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_118
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1037
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620bf76d1e134a310800000000000000
+      internalID: 1415311028937273382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_119
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1013
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09cff45a85e9ed630800000000000000
+      internalID: 3953771626445667472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_120
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 504
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40a26e77e1e342520800000000000000
+      internalID: 2676332379146430980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 477
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab3d193404beb4d80800000000000000
+      internalID: -8265254029864348742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_122
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 451
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f35c88a49865e8fe0800000000000000
+      internalID: -1184914504290876097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_123
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 403
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fffb0630d6a6c21c0800000000000000
+      internalID: -4527126508973539329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_124
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 353
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a016b1623b6ea6b00800000000000000
+      internalID: 822723539061399818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_125
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 343
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef977df16747900c0800000000000000
+      internalID: -4609024692947813890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_126
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 317
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 558b04f245e8affb0800000000000000
+      internalID: -4613218376066484139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_127
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 249
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f3eb20bea812d50800000000000000
+      internalID: 6710797661726719868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_128
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 255
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d71fd3ee2f10d90800000000000000
+      internalID: -7133153229722780347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_129
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 223
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1881aa8a1b871d930800000000000000
+      internalID: 4166243834728683649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_130
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 227
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d83963fb145f950800000000000000
+      internalID: 6482159528179895709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_131
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 185
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 091ef12dbc567a4e0800000000000000
+      internalID: -1970494385873231472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_132
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 186
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87d220c665d01bf0800000000000000
+      internalID: -355549733275379825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_133
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 169
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b00abd05a1e051510800000000000000
+      internalID: 1519135955495919627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_134
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 143
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb9fc8f32928c700800000000000000
+      internalID: 560743388082576362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_135
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 124
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abd9a7860b354dbd0800000000000000
+      internalID: -2606366267208458822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_136
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 125
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c876b9610e37e59a0800000000000000
+      internalID: -6242424627199776884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_137
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 129
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3749adee9f08adc0800000000000000
+      internalID: -3627632324580391109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wizardCast_138
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 117
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0faaf29c6b4156750800000000000000
+      internalID: 6297462429239454448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      wizardCast_0: -8538964301396492588
+      wizardCast_1: 8296295111716708
+      wizardCast_10: -4965766079850253437
+      wizardCast_100: 1054383805739260164
+      wizardCast_101: -6650648249272730566
+      wizardCast_102: 968782490495798471
+      wizardCast_103: -7562584986068839523
+      wizardCast_104: 5263749797166596676
+      wizardCast_105: 5464267459563820025
+      wizardCast_106: 2763937572791429383
+      wizardCast_107: 3071430917820493997
+      wizardCast_108: 6329712080425367694
+      wizardCast_109: 8902958092223064297
+      wizardCast_11: -7370151398693812035
+      wizardCast_110: 4723574269735095592
+      wizardCast_111: 1248322196244612941
+      wizardCast_112: -4636338342510180735
+      wizardCast_113: 361236195322676911
+      wizardCast_114: -5962980633149400937
+      wizardCast_115: -5647923020580084948
+      wizardCast_116: 2890896238805303964
+      wizardCast_117: -762393724814498920
+      wizardCast_118: 1415311028937273382
+      wizardCast_119: 3953771626445667472
+      wizardCast_12: -8720296078875952419
+      wizardCast_120: 2676332379146430980
+      wizardCast_121: -8265254029864348742
+      wizardCast_122: -1184914504290876097
+      wizardCast_123: -4527126508973539329
+      wizardCast_124: 822723539061399818
+      wizardCast_125: -4609024692947813890
+      wizardCast_126: -4613218376066484139
+      wizardCast_127: 6710797661726719868
+      wizardCast_128: -7133153229722780347
+      wizardCast_129: 4166243834728683649
+      wizardCast_13: 7478004436091966041
+      wizardCast_130: 6482159528179895709
+      wizardCast_131: -1970494385873231472
+      wizardCast_132: -355549733275379825
+      wizardCast_133: 1519135955495919627
+      wizardCast_134: 560743388082576362
+      wizardCast_135: -2606366267208458822
+      wizardCast_136: -6242424627199776884
+      wizardCast_137: -3627632324580391109
+      wizardCast_138: 6297462429239454448
+      wizardCast_14: 4518082236470119288
+      wizardCast_15: 2199740481801291193
+      wizardCast_16: 2032843412202331572
+      wizardCast_17: 5929360731316985239
+      wizardCast_18: -5468318473857463097
+      wizardCast_19: 5601293442817737440
+      wizardCast_2: 289243617887635067
+      wizardCast_20: 8052029018332019587
+      wizardCast_21: -8026843095662476279
+      wizardCast_22: -8381454243191367014
+      wizardCast_23: 1229145520324240949
+      wizardCast_24: 3743542890137764950
+      wizardCast_25: -7234857395086951758
+      wizardCast_26: 8767653382343430734
+      wizardCast_27: 189138377838389175
+      wizardCast_28: -7064865640440630199
+      wizardCast_29: 2000454587364560504
+      wizardCast_3: -9162158953139805398
+      wizardCast_30: 7603910840878888224
+      wizardCast_31: 3471530796887342214
+      wizardCast_32: 7264230600688784183
+      wizardCast_33: 1057221587113338877
+      wizardCast_34: -5583313511660797358
+      wizardCast_35: 3032804542968354808
+      wizardCast_36: -5516106915307118816
+      wizardCast_37: 1377424356343503286
+      wizardCast_38: 586914964711767582
+      wizardCast_39: -2151634399429885875
+      wizardCast_4: -2724751222541427980
+      wizardCast_40: -9063259293240787517
+      wizardCast_41: -1187138828120496195
+      wizardCast_42: -2924190560237210880
+      wizardCast_43: 990015887856993116
+      wizardCast_44: 8530248226906955968
+      wizardCast_45: 7235256813646176247
+      wizardCast_46: 7105065937066424186
+      wizardCast_47: -8752510229745925304
+      wizardCast_48: 950964817146950463
+      wizardCast_49: -6551625095911613472
+      wizardCast_5: 5864844773492063891
+      wizardCast_50: 7521257326595124916
+      wizardCast_51: 3359661307598824057
+      wizardCast_52: -3558726628795700980
+      wizardCast_53: 7451609224151891431
+      wizardCast_54: -709171552378611044
+      wizardCast_55: 4707881286293234298
+      wizardCast_56: 3431617737186864241
+      wizardCast_57: 3224290460750269298
+      wizardCast_58: 8878972501980908560
+      wizardCast_59: 3033749151097048358
+      wizardCast_6: 7040806221805271844
+      wizardCast_60: 2383327674627179437
+      wizardCast_61: 6693379636458842374
+      wizardCast_62: -1950390824235713861
+      wizardCast_63: -2992279074731525957
+      wizardCast_64: 5167403416465424929
+      wizardCast_65: -1980124559324279430
+      wizardCast_66: 4762576460492411744
+      wizardCast_67: -7125183763015444340
+      wizardCast_68: -1948026013848737360
+      wizardCast_69: 6372078573694667442
+      wizardCast_7: 8923807636571115685
+      wizardCast_70: -5297291041419886488
+      wizardCast_71: -4555098581552044810
+      wizardCast_72: -4215829660169415971
+      wizardCast_73: 4946167318928381097
+      wizardCast_74: -3437738138785210747
+      wizardCast_75: -8405436186462874562
+      wizardCast_76: -945453861100027486
+      wizardCast_77: -2131410358890872377
+      wizardCast_78: 3190478901909406207
+      wizardCast_79: -406194704931717505
+      wizardCast_8: 7698897319592039155
+      wizardCast_80: 5836684320944971046
+      wizardCast_81: 1930201912924332334
+      wizardCast_82: -6153429163108777401
+      wizardCast_83: 4666394523152415080
+      wizardCast_84: -5058006417750386527
+      wizardCast_85: -6349085559817788504
+      wizardCast_86: 3559197987555112693
+      wizardCast_87: 1971327590105251088
+      wizardCast_88: -1597634032434986768
+      wizardCast_89: 918579374552386502
+      wizardCast_9: 3175688517710605944
+      wizardCast_90: -1758140863554080702
+      wizardCast_91: -2832289013916736774
+      wizardCast_92: 7626970620536000545
+      wizardCast_93: -1772989188469400218
+      wizardCast_94: 986684738277456092
+      wizardCast_95: -7913265008102936258
+      wizardCast_96: -3617453808411576089
+      wizardCast_97: 2210586921379912015
+      wizardCast_98: 5818602096855239328
+      wizardCast_99: 6567969624872133164
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
