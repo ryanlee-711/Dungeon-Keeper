@@ -37,7 +37,7 @@ public class AdventurerAI : MonoBehaviour
     public Vector2Int currentPosition;
     public Vector2Int lastPosition;
     private readonly HashSet<Vector2Int> exploredRooms = new HashSet<Vector2Int>();
-
+    public bool left;
     // D* Lite data structures
     private Dictionary<Vector2Int, float> g = new Dictionary<Vector2Int, float>();
     private Dictionary<Vector2Int, float> rhs = new Dictionary<Vector2Int, float>();
@@ -65,6 +65,7 @@ public class AdventurerAI : MonoBehaviour
     {
         Instance = this;
         currentHealth = maxHealth;
+        left = false;
     }
 
     void Start()
