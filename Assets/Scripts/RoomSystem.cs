@@ -38,6 +38,11 @@ public class Room : MonoBehaviour
     }
 
     public void RefreshVisual() => UpdateVisuals();
+    private void OnValidate()
+    {
+        if (spriteRenderer == null)
+            spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     public void Initialize(Vector2Int position, RoomType type)
     {
@@ -92,7 +97,8 @@ public class Room : MonoBehaviour
         // Fog-of-war: unrevealed rooms are dark
         if (!IsRevealed)
         {
-            spriteRenderer.color = new Color(0.15f, 0.15f, 0.15f, 1f);
+            // spriteRenderer.color = new Color(0.15f, 0.15f, 0.15f, 1f);
+            spriteRenderer.color = new Color(1f, 1f, 1f, 0.3f);
             return;
         }
 

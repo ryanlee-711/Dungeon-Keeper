@@ -22,16 +22,32 @@ public class DungeonGrid : MonoBehaviour
     public Vector2Int StartPosition => startPosition;
     public Vector2Int GoalPosition => goalPosition;
 
-    void Awake()
+    // void Awake()
+    // {
+    //     grid = new Room[width, height];
+
+    //     // Default start/goal (you can randomize later)
+    //     startPosition = new Vector2Int(0, 0);
+    //     goalPosition = new Vector2Int(width - 1, height - 1);
+
+    //     InitializeGrid();
+    // }
+
+    private void Awake()
+{
+    grid = new Room[width, height];
+
+    startPosition = new Vector2Int(0, 0);
+    goalPosition  = new Vector2Int(width - 1, height - 1);
+
+    // AUTO cell size from prefab sprite (world units)
+    if (roomPrefab != null)
     {
-        grid = new Room[width, height];
-
-        // Default start/goal (you can randomize later)
-        startPosition = new Vector2Int(0, 0);
-        goalPosition = new Vector2Int(width - 1, height - 1);
-
-        InitializeGrid();
+        cellSize = GetRoomSize();
     }
+
+    InitializeGrid();
+}
 
     private void InitializeGrid()
     {
@@ -49,6 +65,7 @@ public class DungeonGrid : MonoBehaviour
                 if (roomPrefab != null)
                 {
                     room = Instantiate(roomPrefab, GridToWorldPosition(x, y), Quaternion.identity, roomParent);
+ 
                 }
                 else
                 {
@@ -86,24 +103,57 @@ public class DungeonGrid : MonoBehaviour
 
     public Vector3 GridToWorldPosition(int x, int y)
     {
-        return new Vector3(x * cellSize, y * cellSize, 0);
+        // return new Vector3(x * cellSize, y * cellSize, 0);
+        return new Vector3((x + 0.5f) * cellSize, (y + 0.5f) * cellSize, 0);
     }
+
+    // public Vector2Int WorldToGridPosition(Vector3 worldPos)
+    // {
+    //     float originX = -(width * cellSize) / 2f;
+    //     float originY = -(height * cellSize) / 2f;
+
+    //     float gx = (worldPos.x - originX) / cellSize - 0.5f;
+    //     float gy = (worldPos.y - originY) / cellSize - 0.5f;
+
+    //     int x = Mathf.RoundToInt(gx);
+    //     int y = Mathf.RoundToInt(gy);
+
+    //     x = Mathf.Clamp(x, 0, width - 1);
+    //     y = Mathf.Clamp(y, 0, height - 1);
+
+    //     return new Vector2Int(x, y);
+    // }
+    
+
+    // public Vector2Int WorldToGridPosition(Vector3 worldPos)
+    // {
+    //     // Convert world position to grid coords using nearest cell center snapping
+    //     float gx = worldPos.x / cellSize;
+    //     float gy = worldPos.y / cellSize;
+
+    //     int x = Mathf.RoundToInt(gx);
+    //     int y = Mathf.RoundToInt(gy);
+
+    //     // Clamp so clicks slightly outside don’t produce invalid indices
+    //     x = Mathf.Clamp(x, 0, width - 1);
+    //     y = Mathf.Clamp(y, 0, height - 1);
+
+    //     return new Vector2Int(x, y);
+    // }
 
     public Vector2Int WorldToGridPosition(Vector3 worldPos)
     {
-        // Convert world position to grid coords using nearest cell center snapping
-        float gx = worldPos.x / cellSize;
-        float gy = worldPos.y / cellSize;
+        // Since rooms are centered at (x + 0.5) * cellSize,
+        // the cell boundaries are at x * cellSize.
+        int x = Mathf.FloorToInt(worldPos.x / cellSize);
+        int y = Mathf.FloorToInt(worldPos.y / cellSize);
 
-        int x = Mathf.RoundToInt(gx);
-        int y = Mathf.RoundToInt(gy);
-
-        // Clamp so clicks slightly outside don’t produce invalid indices
         x = Mathf.Clamp(x, 0, width - 1);
         y = Mathf.Clamp(y, 0, height - 1);
 
         return new Vector2Int(x, y);
     }
+
 
 
     public void SwapRooms(Vector2Int a, Vector2Int b)
@@ -130,5 +180,14 @@ public class DungeonGrid : MonoBehaviour
         // Update stored grid coordinates
         rb.SetGridPosition(a);
         ra.SetGridPosition(b);
+    }
+
+    private float GetRoomSize()
+    {
+        var sr = roomPrefab.GetComponentInChildren<SpriteRenderer>();
+        if (sr == null || sr.sprite == null)
+            return 1f;
+
+        return sr.sprite.bounds.size.x;
     }
 }
