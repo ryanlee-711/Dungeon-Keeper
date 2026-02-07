@@ -17,34 +17,46 @@ public class RoomManipulationSystem : MonoBehaviour
 
     private void HandleInput()
     {
-        // Left click
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            Vector2 screenPos = Mouse.current.position.ReadValue();
-            Vector3 worldPos = mainCamera.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, 0f));
+        if (Mouse.current == null) return;
 
+        // Left click: select / swap
+        if (Mouse.current.leftButton.wasPressedThisFrame)
+        {
+            if (dungeonGrid == null || mainCamera == null) return;
+
+            Vector3 worldPos = GetMouseWorldPosition();
             Vector2Int gridPos = dungeonGrid.WorldToGridPosition(worldPos);
             Room clickedRoom = dungeonGrid.GetRoom(gridPos.x, gridPos.y);
 
-            if (clickedRoom != null)
+            if (clickedRoom == null) return;
+
+            if (selectedRoom == null)
             {
-                if (selectedRoom == null)
-                {
-                    if (clickedRoom.CanBeSwapped())
-                        SelectRoom(clickedRoom, gridPos);
-                }
-                else
-                {
-                    AttemptSwap(gridPos);
-                }
+                // First click = select
+                if (clickedRoom.CanBeSwapped())
+                    SelectRoom(clickedRoom, gridPos);
+            }
+            else
+            {
+                // Second click = swap attempt
+                AttemptSwap(gridPos);
             }
         }
 
-        // Right click cancels
-        if (Mouse.current != null && Mouse.current.rightButton.wasPressedThisFrame)
+        // Right click: cancel selection
+        if (Mouse.current.rightButton.wasPressedThisFrame)
         {
             CancelSelection();
         }
+    }
+
+    private Vector3 GetMouseWorldPosition()
+    {
+        Vector2 screenPos = Mouse.current.position.ReadValue();
+
+        // Correct Z distance so ScreenToWorldPoint hits the Z=0 plane
+        float zDist = -mainCamera.transform.position.z;
+        return mainCamera.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, zDist));
     }
 
     private void SelectRoom(Room room, Vector2Int position)
@@ -52,6 +64,7 @@ public class RoomManipulationSystem : MonoBehaviour
         selectedRoom = room;
         selectedPosition = position;
 
+        // Visual feedback
         var sr = selectedRoom.GetComponent<SpriteRenderer>();
         if (sr != null) sr.color = Color.yellow;
     }
@@ -60,15 +73,16 @@ public class RoomManipulationSystem : MonoBehaviour
     {
         if (selectedRoom != null)
         {
-            // Re-apply visuals (instead of forcing white)
-            selectedRoom.SetRevealed(true); // keeps fog logic happy if you’re using it
-            // If you want: selectedRoom.GetComponent<SpriteRenderer>().color = ...
+            // Restore its normal color (based on type/fog/occupied state)
+            selectedRoom.RefreshVisual();
             selectedRoom = null;
         }
     }
 
     public bool AttemptSwap(Vector2Int targetPosition)
     {
+        if (dungeonGrid == null) { CancelSelection(); return false; }
+
         Room targetRoom = dungeonGrid.GetRoom(targetPosition.x, targetPosition.y);
 
         if (targetRoom == null || !targetRoom.CanBeSwapped())
@@ -77,6 +91,7 @@ public class RoomManipulationSystem : MonoBehaviour
             return false;
         }
 
+        // Validate swap maintains paths (if validator exists)
         if (pathValidator != null && !pathValidator.ValidateSwap(selectedPosition, targetPosition))
         {
             Debug.Log("Swap would block required paths!");
@@ -84,8 +99,10 @@ public class RoomManipulationSystem : MonoBehaviour
             return false;
         }
 
+        // Perform swap
         dungeonGrid.SwapRooms(selectedPosition, targetPosition);
 
+        // Re-plan AI if present
         if (AdventurerAI.Instance != null)
             AdventurerAI.Instance.RecalculatePath();
 

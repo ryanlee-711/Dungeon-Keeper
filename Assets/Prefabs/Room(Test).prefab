@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.85660374, g: 0.10343894, b: 0.10343894, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,3 +106,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Room
   roomType: 0
   spriteRenderer: {fileID: 1293666700087088276}
+  drawOutline: 1
+  outlineWidth: 0.05
