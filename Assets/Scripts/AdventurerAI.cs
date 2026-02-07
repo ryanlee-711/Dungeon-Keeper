@@ -692,7 +692,7 @@ public class AdventurerAI : MonoBehaviour
         while (currentHealth > 0 && monster.Health > 0)
         {
             monster.TakeDamage(attackPower);
-            if (monster.Health > 0)
+            if (monster.Health >= 0)
                 TakeDamage(monster.AttackPower);
         }
 
