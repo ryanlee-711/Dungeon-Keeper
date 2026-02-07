@@ -1,3 +1,4 @@
+using System.Diagnostics.Tracing;
 using UnityEngine;
 
 public enum RoomType
@@ -15,6 +16,11 @@ public class Room : MonoBehaviour
 {
     [SerializeField] private RoomType roomType = RoomType.Empty;
     [SerializeField] private SpriteRenderer spriteRenderer;
+
+    [SerializeField] private bool drawOutline = true;
+    [SerializeField] private float outlineWidth = 0.05f;
+
+    private LineRenderer outline;
 
     public RoomType Type => roomType;
     public Vector2Int GridPosition { get; private set; }
@@ -35,6 +41,7 @@ public class Room : MonoBehaviour
     {
         GridPosition = position;
         roomType = type;
+        EnsureOutline();
         UpdateVisuals();
     }
 
@@ -101,5 +108,39 @@ public class Room : MonoBehaviour
 
         if (IsOccupiedByAdventurers)
             spriteRenderer.color = Color.blue;
+
+        EnsureOutline();
     }
+
+    private void EnsureOutline()
+    {
+        if (!drawOutline) return;
+
+        if (outline == null)
+        {
+            outline = GetComponent<LineRenderer>();
+            if (outline == null) outline = gameObject.AddComponent<LineRenderer>();
+
+            outline.useWorldSpace = false;
+            outline.loop = true;
+            outline.positionCount = 5;
+            outline.startWidth = outlineWidth;
+            outline.endWidth = outlineWidth;
+
+            // Default material is fine in URP/2D; if it’s pink/missing, assign a simple sprite/default material
+            outline.material = new Material(Shader.Find("Sprites/Default"));
+        }
+
+        // Square border around sprite (assuming pivot centered and 1x1 scale)
+        // If your sprite is scaled, this still works because it’s in local space.
+        outline.SetPosition(0, new Vector3(-0.5f, -0.5f, -0.01f));
+        outline.SetPosition(1, new Vector3(-0.5f,  0.5f, -0.01f));
+        outline.SetPosition(2, new Vector3( 0.5f,  0.5f, -0.01f));
+        outline.SetPosition(3, new Vector3( 0.5f, -0.5f, -0.01f));
+        outline.SetPosition(4, new Vector3(-0.5f, -0.5f, -0.01f));
+
+        outline.startColor = Color.black;
+        outline.endColor = Color.black;
+    }
+
 }

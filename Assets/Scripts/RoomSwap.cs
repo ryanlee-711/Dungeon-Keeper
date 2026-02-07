@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class RoomManipulationSystem : MonoBehaviour
 {
@@ -16,9 +17,12 @@ public class RoomManipulationSystem : MonoBehaviour
 
     private void HandleInput()
     {
-        if (Input.GetMouseButtonDown(0))
+        // Left click
+        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
         {
-            Vector3 worldPos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 screenPos = Mouse.current.position.ReadValue();
+            Vector3 worldPos = mainCamera.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, 0f));
+
             Vector2Int gridPos = dungeonGrid.WorldToGridPosition(worldPos);
             Room clickedRoom = dungeonGrid.GetRoom(gridPos.x, gridPos.y);
 
@@ -36,7 +40,8 @@ public class RoomManipulationSystem : MonoBehaviour
             }
         }
 
-        if (Input.GetMouseButtonDown(1))
+        // Right click cancels
+        if (Mouse.current != null && Mouse.current.rightButton.wasPressedThisFrame)
         {
             CancelSelection();
         }
@@ -55,9 +60,9 @@ public class RoomManipulationSystem : MonoBehaviour
     {
         if (selectedRoom != null)
         {
-            var sr = selectedRoom.GetComponent<SpriteRenderer>();
-            if (sr != null) sr.color = Color.white;
-
+            // Re-apply visuals (instead of forcing white)
+            selectedRoom.SetRevealed(true); // keeps fog logic happy if you’re using it
+            // If you want: selectedRoom.GetComponent<SpriteRenderer>().color = ...
             selectedRoom = null;
         }
     }
@@ -72,7 +77,7 @@ public class RoomManipulationSystem : MonoBehaviour
             return false;
         }
 
-        if (!pathValidator.ValidateSwap(selectedPosition, targetPosition))
+        if (pathValidator != null && !pathValidator.ValidateSwap(selectedPosition, targetPosition))
         {
             Debug.Log("Swap would block required paths!");
             CancelSelection();
