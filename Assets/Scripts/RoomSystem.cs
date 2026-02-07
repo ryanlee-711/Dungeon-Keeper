@@ -30,6 +30,9 @@ public class Room : MonoBehaviour
     public Monster Monster { get; private set; }
     public Trap Trap { get; private set; }
 
+    // Store original monster for respawning
+    private Monster originalMonster;
+
     public bool CanBeSwapped()
     {
         return roomType != RoomType.Start &&
@@ -74,7 +77,25 @@ public class Room : MonoBehaviour
         Monster = monster;
         Trap = null;
         roomType = RoomType.Monster;
+
+
+        // Store original monster data for respawning (only if not already set)
+        if (originalMonster == null && monster != null)
+        {
+            originalMonster = new Monster
+            {
+                Name = monster.Name,
+                Health = monster.Health,
+                AttackPower = monster.AttackPower,
+                Sprite = monster.Sprite
+            };
+        }
         UpdateVisuals();
+    }
+
+    public Monster GetOriginalMonster()
+    {
+        return originalMonster;
     }
 
     public void SetTrap(Trap trap)
@@ -113,6 +134,12 @@ public class Room : MonoBehaviour
             RoomType.Treasure => Color.yellow,
             _ => Color.white
         };
+
+        // Dim if monster is dead
+        if (roomType == RoomType.Monster && Monster != null && Monster.Health <= 0)
+        {
+            spriteRenderer.color = Color.gray;
+        }
 
         if (IsOccupiedByAdventurers)
             spriteRenderer.color = Color.blue;
