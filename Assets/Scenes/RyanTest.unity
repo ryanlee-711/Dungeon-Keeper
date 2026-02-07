@@ -223,6 +223,9 @@ MonoBehaviour:
   monsterDangerBias: 0
   greediness: 0.15
   trapDetectionRange: 2
+  currentHealth: 0
+  currentPosition: {x: 0, y: 0}
+  lastPosition: {x: 0, y: 0}
 --- !u!4 &80650355 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7605730100964051104, guid: ea752b257c2904273a6d7dd881d4494d, type: 3}
@@ -447,6 +450,8 @@ MonoBehaviour:
   trapRooms: 4
   healRooms: 1
   treasureRooms: 0
+  vampire: {fileID: 6741377382806097872, guid: c6cca32b003ef43dcb296451b9c307fc, type: 3}
+  skeleton: {fileID: 6722243163064816128, guid: 76be0b46927df4380b681c942e6a93b4, type: 3}
 --- !u!4 &320843078
 Transform:
   m_ObjectHideFlags: 0
@@ -475,6 +480,7 @@ GameObject:
   - component: {fileID: 375456857}
   - component: {fileID: 375456860}
   - component: {fileID: 375456861}
+  - component: {fileID: 375456862}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -614,6 +620,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraAutoFit
   dungeonGrid: {fileID: 320843077}
   padding: 1
+--- !u!114 &375456862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375456856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdffae5a737974c44880ab6a9766be77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraWASDController
+  moveSpeed: 10
+  useUnscaledTime: 1
+  shiftToSprint: 1
+  sprintMultiplier: 2
 --- !u!1 &396375605
 GameObject:
   m_ObjectHideFlags: 0
@@ -755,7 +777,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8113449977568535871, guid: ea752b257c2904273a6d7dd881d4494d, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1195,6 +1217,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495982634}
   m_CullTransparentMesh: 1
+--- !u!1001 &1606367542
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6740374418236104319, guid: c6cca32b003ef43dcb296451b9c307fc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 424.5039
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740374418236104319, guid: c6cca32b003ef43dcb296451b9c307fc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 239.53201
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740374418236104319, guid: c6cca32b003ef43dcb296451b9c307fc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740374418236104319, guid: c6cca32b003ef43dcb296451b9c307fc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740374418236104319, guid: c6cca32b003ef43dcb296451b9c307fc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740374418236104319, guid: c6cca32b003ef43dcb296451b9c307fc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740374418236104319, guid: c6cca32b003ef43dcb296451b9c307fc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740374418236104319, guid: c6cca32b003ef43dcb296451b9c307fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740374418236104319, guid: c6cca32b003ef43dcb296451b9c307fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6740374418236104319, guid: c6cca32b003ef43dcb296451b9c307fc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6741377382806097872, guid: c6cca32b003ef43dcb296451b9c307fc, type: 3}
+      propertyPath: m_Name
+      value: Vampire
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c6cca32b003ef43dcb296451b9c307fc, type: 3}
 --- !u!1 &1611324501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,3 +1788,4 @@ SceneRoots:
   - {fileID: 290696335}
   - {fileID: 967215005}
   - {fileID: 396375608}
+  - {fileID: 1606367542}

@@ -664,15 +664,36 @@ public class AdventurerAI : MonoBehaviour
     {
         switch (room.Type)
         {
-            case RoomType.Monster:
-                StartCombat(room.Monster);
-                Monster targetMonster = room.Monster;
-                Animator monsterAnim = targetMonster.gameObject.GetComponent<Animator>();
-                monsterAnim.SetBool("is_fighting", true);
-                monsterAnim.SetBool("is_fighting", false);
-                break;
+            // case RoomType.Monster:
+            //     StartCombat(room.Monster);
+            //     Monster targetMonster = room.Monster;
+            //     Animator monsterAnim = targetMonster.gameObject.GetComponent<Animator>();
+            //     monsterAnim.SetBool("is_fighting", true);
+            //     monsterAnim.SetBool("is_fighting", false);
+            //     break;
 
-            case RoomType.Trap:
+
+            case RoomType.Monster:
+                {
+                    // If you don't actually have a Monster object spawned/assigned yet, don't crash
+                    if (room.Monster == null)
+                    {
+                        Debug.LogWarning($"Monster room at {room.GridPosition} has no Monster assigned.");
+                        break;
+                    }
+
+                    StartCombat(room.Monster);
+
+                    // Only try to animate if there's an Animator
+                    var monsterAnim = room.Monster.Sprite.GetComponent<Animator>();
+                    if (monsterAnim != null)
+                    {
+                        monsterAnim.SetTrigger("fight"); // recommended instead of true then false
+                    }
+
+                    break;
+                }
+                            case RoomType.Trap:
                 TriggerTrap(room.Trap);
                 break;
 
