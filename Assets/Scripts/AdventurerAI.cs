@@ -36,6 +36,7 @@ public class AdventurerAI : MonoBehaviour
     public int currentHealth;
     public Vector2Int currentPosition;
     public Vector2Int lastPosition;
+    public int x_velocity;
     private readonly HashSet<Vector2Int> exploredRooms = new HashSet<Vector2Int>();
     public bool left;
     // D* Lite data structures
@@ -79,6 +80,7 @@ public class AdventurerAI : MonoBehaviour
 
         currentPosition = dungeonGrid.StartPosition;
         lastPosition = currentPosition;
+        x_velocity = currentPosition.x - lastPosition.x;
         SetOccupancy(currentPosition, true);
 
         InitializeDStarLite();
