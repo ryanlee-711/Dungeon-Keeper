@@ -667,6 +667,10 @@ public class AdventurerAI : MonoBehaviour
         {
             case RoomType.Monster:
                 StartCombat(room.Monster);
+                Monster targetMonster = room.Monster;
+                Animator monsterAnim = targetMonster.gameObject.GetComponent<Animator>();
+                monsterAnim.SetBool("is_fighting", true);
+                monsterAnim.SetBool("is_fighting", false);
                 break;
 
             case RoomType.Trap:
