@@ -36,6 +36,7 @@ public class AdventurerAI : MonoBehaviour
     public int currentHealth;
     public Vector2Int currentPosition;
     public Vector2Int lastPosition;
+    public int x_velocity;
     private readonly HashSet<Vector2Int> exploredRooms = new HashSet<Vector2Int>();
     public bool left;
     // D* Lite data structures
@@ -79,6 +80,7 @@ public class AdventurerAI : MonoBehaviour
 
         currentPosition = dungeonGrid.StartPosition;
         lastPosition = currentPosition;
+        x_velocity = currentPosition.x - lastPosition.x;
         SetOccupancy(currentPosition, true);
 
         InitializeDStarLite();
@@ -248,6 +250,18 @@ public class AdventurerAI : MonoBehaviour
         SetOccupancy(currentPosition, false);
         lastPosition = currentPosition;
         currentPosition = nextMove;
+        if (currentPosition.x < lastPosition.x && !left)
+        {
+            Vector3 currentScale = transform.localScale;
+            currentScale.x *= -1;
+            transform.localScale = currentScale;
+        }
+        else if(currentPosition.x > lastPosition.x && left)
+        {
+            Vector3 currentScale = transform.localScale;
+            currentScale.x *= -1;
+            transform.localScale = currentScale;
+        }
         SetOccupancy(currentPosition, true);
 
         // If we stepped onto the goal, stop ON it and end immediately
@@ -671,6 +685,13 @@ public class AdventurerAI : MonoBehaviour
                 Animator monsterAnim = targetMonster.gameObject.GetComponent<Animator>();
                 monsterAnim.SetBool("is_fighting", true);
                 monsterAnim.SetBool("is_fighting", false);
+                // manange monster rotation
+                if (left)
+                {
+                    Vector3 currentScale = targetMonster.transform.localScale;
+                    currentScale.x *= -1;
+                    targetMonster.transform.localScale = currentScale;
+                }
                 break;
 
             case RoomType.Trap:
