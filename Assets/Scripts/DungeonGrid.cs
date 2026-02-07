@@ -11,6 +11,12 @@ public class DungeonGrid : MonoBehaviour
     [SerializeField] private Room roomPrefab;
     [SerializeField] private Transform roomParent;
 
+    [Header("Room Type Counts (excluding Start/Goal)")]
+    [SerializeField] private int monsterRooms = 5;
+    [SerializeField] private int trapRooms = 4;
+    [SerializeField] private int healRooms = 1;
+    [SerializeField] private int treasureRooms = 0;
+
     private Room[,] grid;
     private Vector2Int startPosition;
     private Vector2Int goalPosition;
@@ -21,17 +27,6 @@ public class DungeonGrid : MonoBehaviour
 
     public Vector2Int StartPosition => startPosition;
     public Vector2Int GoalPosition => goalPosition;
-
-    // void Awake()
-    // {
-    //     grid = new Room[width, height];
-
-    //     // Default start/goal (you can randomize later)
-    //     startPosition = new Vector2Int(0, 0);
-    //     goalPosition = new Vector2Int(width - 1, height - 1);
-
-    //     InitializeGrid();
-    // }
 
     private void Awake()
 {
@@ -53,13 +48,15 @@ public class DungeonGrid : MonoBehaviour
     {
         if (roomParent == null) roomParent = transform;
 
+        var roomTypes = GenerateRoomTypes();
+
         for (int x = 0; x < width; x++)
         {
             for (int y = 0; y < height; y++)
             {
-                RoomType type = RoomType.Empty;
-                if (x == startPosition.x && y == startPosition.y) type = RoomType.Start;
-                if (x == goalPosition.x && y == goalPosition.y) type = RoomType.Goal;
+                RoomType type = roomTypes[x, y];
+                // if (x == startPosition.x && y == startPosition.y) type = RoomType.Start;
+                // if (x == goalPosition.x && y == goalPosition.y) type = RoomType.Goal;
 
                 Room room;
                 if (roomPrefab != null)
@@ -103,43 +100,9 @@ public class DungeonGrid : MonoBehaviour
 
     public Vector3 GridToWorldPosition(int x, int y)
     {
-        // return new Vector3(x * cellSize, y * cellSize, 0);
         return new Vector3((x + 0.5f) * cellSize, (y + 0.5f) * cellSize, 0);
     }
 
-    // public Vector2Int WorldToGridPosition(Vector3 worldPos)
-    // {
-    //     float originX = -(width * cellSize) / 2f;
-    //     float originY = -(height * cellSize) / 2f;
-
-    //     float gx = (worldPos.x - originX) / cellSize - 0.5f;
-    //     float gy = (worldPos.y - originY) / cellSize - 0.5f;
-
-    //     int x = Mathf.RoundToInt(gx);
-    //     int y = Mathf.RoundToInt(gy);
-
-    //     x = Mathf.Clamp(x, 0, width - 1);
-    //     y = Mathf.Clamp(y, 0, height - 1);
-
-    //     return new Vector2Int(x, y);
-    // }
-    
-
-    // public Vector2Int WorldToGridPosition(Vector3 worldPos)
-    // {
-    //     // Convert world position to grid coords using nearest cell center snapping
-    //     float gx = worldPos.x / cellSize;
-    //     float gy = worldPos.y / cellSize;
-
-    //     int x = Mathf.RoundToInt(gx);
-    //     int y = Mathf.RoundToInt(gy);
-
-    //     // Clamp so clicks slightly outside don’t produce invalid indices
-    //     x = Mathf.Clamp(x, 0, width - 1);
-    //     y = Mathf.Clamp(y, 0, height - 1);
-
-    //     return new Vector2Int(x, y);
-    // }
 
     public Vector2Int WorldToGridPosition(Vector3 worldPos)
     {
@@ -190,4 +153,65 @@ public class DungeonGrid : MonoBehaviour
 
         return sr.sprite.bounds.size.x;
     }
+
+    private RoomType[,] GenerateRoomTypes()
+    {
+        var types = new RoomType[width, height];
+
+        // Default everything to Empty
+        for (int x = 0; x < width; x++)
+            for (int y = 0; y < height; y++)
+                types[x, y] = RoomType.Empty;
+
+        // Force Start/Goal
+        types[startPosition.x, startPosition.y] = RoomType.Start;
+        types[goalPosition.x, goalPosition.y] = RoomType.Goal;
+
+        // Collect all available cells (exclude start/goal)
+        var candidates = new System.Collections.Generic.List<Vector2Int>();
+        for (int x = 0; x < width; x++)
+        {
+            for (int y = 0; y < height; y++)
+            {
+                var p = new Vector2Int(x, y);
+                if (p == startPosition || p == goalPosition) continue;
+                candidates.Add(p);
+            }
+        }
+
+        // Shuffle candidates
+        for (int i = candidates.Count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            (candidates[i], candidates[j]) = (candidates[j], candidates[i]);
+        }
+
+        int needed = monsterRooms + trapRooms + healRooms + treasureRooms;
+        if (needed > candidates.Count)
+        {
+            Debug.LogWarning($"Requested {needed} special rooms, but only {candidates.Count} cells available. Clamping.");
+            // clamp by reducing extras (simple approach)
+            needed = candidates.Count;
+        }
+
+        int idx = 0;
+
+        void Place(RoomType t, int count)
+        {
+            for (int k = 0; k < count && idx < candidates.Count; k++)
+            {
+                var p = candidates[idx++];
+                types[p.x, p.y] = t;
+            }
+        }
+
+        // Place in whatever priority order you want
+        Place(RoomType.Healing, healRooms);
+        Place(RoomType.Monster, monsterRooms);
+        Place(RoomType.Trap, trapRooms);
+        Place(RoomType.Treasure, treasureRooms);
+
+        return types;
+    }
+
 }

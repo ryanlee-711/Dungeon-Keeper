@@ -106,6 +106,12 @@ public class AdventurerMovementController : MonoBehaviour
         if (previousPos != newPos)
         {
             StartSmoothMove(previousPos, newPos);
+
+            if (adventurerAI.HasReachedGoal)
+            {
+                isMoving = false;
+                adventurerVisual.position = GetWorldPosition(newPos);
+            }
         }
 
         // Check if we should pause (e.g., after combat)
