@@ -62,6 +62,8 @@ public class DungeonGrid : MonoBehaviour
 
                 room.Initialize(new Vector2Int(x, y), type);
 
+                if (type == RoomType.Goal) room.SetRevealed(true);
+
                 // Start room is revealed by default
                 if (type == RoomType.Start) room.SetRevealed(true);
 
