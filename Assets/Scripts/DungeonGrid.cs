@@ -203,6 +203,7 @@ public class DungeonGrid : MonoBehaviour
                 var p = candidates[idx++];
                 types[p.x, p.y] = t;
                 Room r = new Room();
+                r.roomType = t;
                 if(t == RoomType.Monster)
                 {
                     Monster m = new Monster();
@@ -219,8 +220,6 @@ public class DungeonGrid : MonoBehaviour
                         m.AttackPower = 15;
                     }
                     r.SetMonster(m);
-
-                    grid[p.x, p.y] = r;
                 }
                 if (t == RoomType.Trap)
                 {
@@ -228,10 +227,8 @@ public class DungeonGrid : MonoBehaviour
                     tr.Type = Trap.TrapType.Damage;
                     tr.Damage = 20;
                     r.SetTrap(tr);
-
-                    grid[p.x, p.y] = r;
                 }
-
+                grid[p.x, p.y] = r;
             }
         }
 
