@@ -1280,6 +1280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1766499967}
   - component: {fileID: 1766499966}
+  - component: {fileID: 1766499968}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1333,6 +1334,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1766499968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766499965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b3fe60988af4bf419e1ea3e91e10025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerManager
+  maxMana: 100
+  currentMana: 100
+  manaRegenRate: 5
+  swapRoomCost: 10
+  respawnMonsterBaseCost: 30
+  maxManaUpgradeBaseCost: 50
+  manaRegenUpgradeBaseCost: 60
+  monsterPowerUpgradeBaseCost: 75
+  upgradeCostMultiplier: 1.5
+  maxManaIncreasePerLevel: 20
+  manaRegenIncreasePerLevel: 2
+  monsterPowerIncreasePerLevel: 0.2
+  OnManaChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  OnNotEnoughMana:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1799666563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,6 +1375,7 @@ GameObject:
   - component: {fileID: 1799666564}
   - component: {fileID: 1799666566}
   - component: {fileID: 1799666565}
+  - component: {fileID: 1799666567}
   m_Layer: 5
   m_Name: ManaBar
   m_TagString: Untagged
@@ -1409,6 +1441,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799666563}
   m_CullTransparentMesh: 1
+--- !u!114 &1799666567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799666563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caf829a357a3edd4aab00b40f1e46396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ManaBarUI
+  fillImage: {fileID: 1080844622}
 --- !u!1 &1824196817
 GameObject:
   m_ObjectHideFlags: 0
