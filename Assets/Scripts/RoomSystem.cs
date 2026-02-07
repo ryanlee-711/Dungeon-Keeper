@@ -37,6 +37,8 @@ public class Room : MonoBehaviour
                !IsOccupiedByAdventurers;
     }
 
+    public void RefreshVisual() => UpdateVisuals();
+
     public void Initialize(Vector2Int position, RoomType type)
     {
         GridPosition = position;

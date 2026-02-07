@@ -1,10 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
-/// <summary>
-/// Manages the real-time dungeon defense game state
-/// Handles win/lose conditions, game speed, and events
-/// </summary>
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
@@ -37,33 +34,20 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        if (Instance == null) Instance = this;
+        else { Destroy(gameObject); return; }
     }
 
     void Start()
     {
         if (adventurerAI == null)
-        {
             adventurerAI = AdventurerAI.Instance;
-        }
 
         if (movementController == null)
-        {
             movementController = FindObjectOfType<AdventurerMovementController>();
-        }
 
-        // Don't auto-start, wait for player input
         if (gameStarted)
-        {
             StartGame();
-        }
     }
 
     void Update()
@@ -80,16 +64,15 @@ public class GameManager : MonoBehaviour
             movementController.SetMoveSpeed(currentSpeed);
         }
 
-        // Check for manual start/restart
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            RestartGame();
-        }
+        // Keyboard controls (New Input System)
+        var kb = Keyboard.current;
+        if (kb == null) return;
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
+        if (kb.rKey.wasPressedThisFrame)
+            RestartGame();
+
+        if (kb.escapeKey.wasPressedThisFrame)
             PauseGame();
-        }
     }
 
     public void StartGame()
@@ -100,6 +83,9 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("Game Started! Defend your dungeon!");
         OnGameStart?.Invoke();
+
+        if (movementController != null)
+            movementController.SetMoveSpeed(baseGameSpeed);
     }
 
     public void PlayerWins()
@@ -113,9 +99,7 @@ public class GameManager : MonoBehaviour
         OnPlayerWin?.Invoke();
 
         if (movementController != null)
-        {
-            movementController.PauseMovement(999f); // Stop movement
-        }
+            movementController.PauseMovement(999f);
     }
 
     public void PlayerLoses()
@@ -129,9 +113,7 @@ public class GameManager : MonoBehaviour
         OnPlayerLose?.Invoke();
 
         if (movementController != null)
-        {
             movementController.PauseMovement(999f);
-        }
     }
 
     public void RestartGame()
@@ -152,20 +134,14 @@ public class GameManager : MonoBehaviour
     {
         baseGameSpeed = Mathf.Max(0.1f, speed);
         if (movementController != null)
-        {
             movementController.SetMoveSpeed(baseGameSpeed);
-        }
     }
 
     // Called by AdventurerAI when health changes
     public void OnAdventurerTookDamage(int newHealth)
     {
         OnAdventurerHealthChanged?.Invoke(newHealth);
-
-        if (newHealth <= 0)
-        {
-            PlayerWins();
-        }
+        if (newHealth <= 0) PlayerWins();
     }
 
     // Called by AdventurerAI when goal is reached
