@@ -3,27 +3,41 @@ using UnityEngine.InputSystem;
 
 public class RoomManipulationSystem : MonoBehaviour
 {
+    [Header("References")]
     [SerializeField] private DungeonGrid dungeonGrid;
     [SerializeField] private PathValidator pathValidator;
     [SerializeField] private Camera mainCamera;
 
+    [Header("Mana")]
+    public int maxMana = 100;
+    public int currentMana = 100;
+    public int swapManaCost = 10;
+
+    public float manaRegenPerSecond = 2f;
+    public float regenDelayAfterSpend = 1.0f;
+
+    private float regenTimer;
+
+    [Header("Optional: Override costs here (leave false to use PlayerManager's costs)")]
+    // [SerializeField] private bool useLocalSwapCost = false;
+    // [SerializeField] private int localSwapManaCost = 10;
+
     private Room selectedRoom;
     private Vector2Int selectedPosition;
 
-    void Update()
-    {
+    void Update() {
         HandleInput();
+        RegenerateMana();
     }
 
     private void HandleInput()
     {
         if (Mouse.current == null) return;
+        if (dungeonGrid == null || mainCamera == null) return;
 
         // Left click: select / swap
         if (Mouse.current.leftButton.wasPressedThisFrame)
         {
-            if (dungeonGrid == null || mainCamera == null) return;
-
             Vector3 worldPos = GetMouseWorldPosition();
             Vector2Int gridPos = dungeonGrid.WorldToGridPosition(worldPos);
             Room clickedRoom = dungeonGrid.GetRoom(gridPos.x, gridPos.y);
@@ -32,29 +46,38 @@ public class RoomManipulationSystem : MonoBehaviour
 
             if (selectedRoom == null)
             {
-                // First click = select
                 if (clickedRoom.CanBeSwapped())
                     SelectRoom(clickedRoom, gridPos);
             }
             else
             {
-                // Second click = swap attempt
                 AttemptSwap(gridPos);
             }
         }
 
-        // Right click: cancel selection
+        // Right click: cancel selection OR (optional) respawn monster like PlayerController did
         if (Mouse.current.rightButton.wasPressedThisFrame)
         {
-            CancelSelection();
+            if (selectedRoom != null)
+            {
+                CancelSelection();
+            }
+            else
+            {
+                // Optional: respawn monster at clicked room
+                Vector3 worldPos = GetMouseWorldPosition();
+                Vector2Int gridPos = dungeonGrid.WorldToGridPosition(worldPos);
+                Room clickedRoom = dungeonGrid.GetRoom(gridPos.x, gridPos.y);
+
+                if (clickedRoom != null)
+                    AttemptRespawnMonster(clickedRoom, gridPos);
+            }
         }
     }
 
     private Vector3 GetMouseWorldPosition()
     {
         Vector2 screenPos = Mouse.current.position.ReadValue();
-
-        // Correct Z distance so ScreenToWorldPoint hits the Z=0 plane
         float zDist = -mainCamera.transform.position.z;
         return mainCamera.ScreenToWorldPoint(new Vector3(screenPos.x, screenPos.y, zDist));
     }
@@ -64,7 +87,6 @@ public class RoomManipulationSystem : MonoBehaviour
         selectedRoom = room;
         selectedPosition = position;
 
-        // Visual feedback
         var sr = selectedRoom.GetComponent<SpriteRenderer>();
         if (sr != null) sr.color = Color.yellow;
     }
@@ -73,8 +95,7 @@ public class RoomManipulationSystem : MonoBehaviour
     {
         if (selectedRoom != null)
         {
-            // Restore its normal color (based on type/fog/occupied state)
-            selectedRoom.RefreshVisual();
+            selectedRoom.RefreshVisual(); // restores based on room type/fog/etc
             selectedRoom = null;
         }
     }
@@ -84,7 +105,6 @@ public class RoomManipulationSystem : MonoBehaviour
         if (dungeonGrid == null) { CancelSelection(); return false; }
 
         Room targetRoom = dungeonGrid.GetRoom(targetPosition.x, targetPosition.y);
-
         if (targetRoom == null || !targetRoom.CanBeSwapped())
         {
             CancelSelection();
@@ -99,9 +119,14 @@ public class RoomManipulationSystem : MonoBehaviour
             return false;
         }
 
-        // Perform swap
+        if (!TrySpendMana(swapManaCost))
+        {
+            Debug.Log("Not enough mana to swap");
+            CancelSelection();
+            return false;
+        }
+
         dungeonGrid.SwapRooms(selectedPosition, targetPosition);
-        
 
         // Re-plan AI if present
         if (AdventurerAI.Instance != null)
@@ -109,5 +134,66 @@ public class RoomManipulationSystem : MonoBehaviour
 
         CancelSelection();
         return true;
+    }
+
+    private void AttemptRespawnMonster(Room room, Vector2Int position)
+    {
+        // Copy of PlayerController logic (optional)
+        if (room.Type != RoomType.Monster)
+            return;
+
+        if (room.Monster != null && room.Monster.Health > 0)
+            return;
+
+        Monster originalMonster = room.GetOriginalMonster();
+        if (originalMonster == null)
+            return;
+
+        // if (PlayerManager.Instance == null)
+        //     return;
+
+        // if (!PlayerManager.Instance.CanRespawnMonster(originalMonster))
+        //     return;
+
+        // if (PlayerManager.Instance.TryRespawnMonster(originalMonster))
+        // {
+        //     Monster newMonster = new Monster
+        //     {
+        //         Name = originalMonster.Name,
+        //         Health = Mathf.RoundToInt(originalMonster.Health * PlayerManager.Instance.GetMonsterPowerMultiplier()),
+        //         AttackPower = Mathf.RoundToInt(originalMonster.AttackPower * PlayerManager.Instance.GetMonsterPowerMultiplier()),
+        //         Sprite = originalMonster.Sprite
+        //     };
+
+        //     room.SetMonster(newMonster);
+
+        //     if (AdventurerAI.Instance != null)
+        //         AdventurerAI.Instance.OnRoomChanged(position);
+        // }
+    }
+
+    public bool TrySpendMana(int amount)
+    {
+        if (currentMana < amount)
+            return false;
+
+        currentMana -= amount;
+        regenTimer = regenDelayAfterSpend;
+        return true;
+    }
+
+    private void RegenerateMana()
+    {
+        if (currentMana >= maxMana)
+            return;
+
+         if (regenTimer > 0f)
+        {
+            regenTimer -= Time.deltaTime;
+            return;
+        }
+
+        currentMana += Mathf.CeilToInt(manaRegenPerSecond * Time.deltaTime);
+        currentMana = Mathf.Min(currentMana, maxMana);
     }
 }

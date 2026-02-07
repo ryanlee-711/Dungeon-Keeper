@@ -52,14 +52,15 @@ public class PlayerManager : MonoBehaviour
 
     void Awake()
     {
-        if (Instance == null)
+        void Awake()
         {
-            Instance = this;
+            if (Instance == null) Instance = this;
+            else { Destroy(gameObject); return; }
+
+            if (OnManaChanged == null) OnManaChanged = new UnityEvent<int, int>();
+            if (OnNotEnoughMana == null) OnNotEnoughMana = new UnityEvent<string>();
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+
     }
 
     void Start()
@@ -114,6 +115,11 @@ public class PlayerManager : MonoBehaviour
     public bool CanSwapRoom()
     {
         return currentMana >= swapRoomCost;
+    }
+
+    public bool TrySpendMana(int amount, string actionName = "action")
+    {
+        return SpendMana(amount, actionName);
     }
 
     public bool TrySwapRoom()
