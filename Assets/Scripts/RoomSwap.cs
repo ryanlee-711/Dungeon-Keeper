@@ -84,10 +84,15 @@ public class RoomManipulationSystem : MonoBehaviour
             return false;
         }
 
+        // Perform the swap
         dungeonGrid.SwapRooms(selectedPosition, targetPosition);
 
+        // Notify AI of changes (BOTH positions changed!)
         if (AdventurerAI.Instance != null)
-            AdventurerAI.Instance.RecalculatePath();
+        {
+            AdventurerAI.Instance.OnRoomChanged(selectedPosition);
+            AdventurerAI.Instance.OnRoomChanged(targetPosition);
+        }
 
         CancelSelection();
         return true;
