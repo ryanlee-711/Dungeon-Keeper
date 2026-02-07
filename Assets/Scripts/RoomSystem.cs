@@ -27,8 +27,8 @@ public class Room : MonoBehaviour
     public bool IsOccupiedByAdventurers { get; private set; }
     public bool IsRevealed { get; private set; }
 
-    public Monster Monster { get; private set; }
-    public Trap Trap { get; private set; }
+    public Monster Monster { get; set; }
+    public Trap Trap { get; set; }
 
     // Store original monster for respawning
     private Monster originalMonster;
