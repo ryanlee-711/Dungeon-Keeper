@@ -14,7 +14,7 @@ public enum RoomType
 
 public class Room : MonoBehaviour
 {
-    [SerializeField] private RoomType roomType = RoomType.Empty;
+    [SerializeField] public RoomType roomType = RoomType.Empty;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
     [SerializeField] private bool drawOutline = true;
