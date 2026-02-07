@@ -10,7 +10,7 @@ public class RoomManipulationSystem : MonoBehaviour
 
     [Header("Mana")]
     public int maxMana = 100;
-    public int currentMana = 100;
+    public float currentMana = 100f;
     public int swapManaCost = 10;
 
     public float manaRegenPerSecond = 2f;
@@ -193,7 +193,7 @@ public class RoomManipulationSystem : MonoBehaviour
             return;
         }
 
-        currentMana += Mathf.CeilToInt(manaRegenPerSecond * Time.deltaTime);
+        currentMana += manaRegenPerSecond * Time.deltaTime;
         currentMana = Mathf.Min(currentMana, maxMana);
     }
 }

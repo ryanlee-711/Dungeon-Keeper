@@ -1570,9 +1570,9 @@ MonoBehaviour:
   mainCamera: {fileID: 375456858}
   maxMana: 100
   currentMana: 100
-  swapManaCost: 10
-  useLocalSwapCost: 0
-  localSwapManaCost: 10
+  swapManaCost: 25
+  manaRegenPerSecond: 2
+  regenDelayAfterSpend: 1
 --- !u!4 &1824196819
 Transform:
   m_ObjectHideFlags: 0
