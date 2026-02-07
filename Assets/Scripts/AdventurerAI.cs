@@ -6,7 +6,7 @@ public class AdventurerAI : MonoBehaviour
     public static AdventurerAI Instance { get; private set; }
 
     [SerializeField] private DungeonGrid dungeonGrid;
-    [SerializeField] private int maxHealth = 100;
+    [SerializeField] public int maxHealth = 100;
     [SerializeField] private int attackPower = 20;
     [SerializeField] private int visionRange = 3;
 
