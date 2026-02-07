@@ -30,7 +30,7 @@ public class PriorityQueue<T>
 
 // Monster data
 [System.Serializable]
-public class Monster
+public class Monster : MonoBehaviour
 {
     public string Name;
     public int Health;
