@@ -202,6 +202,36 @@ public class DungeonGrid : MonoBehaviour
             {
                 var p = candidates[idx++];
                 types[p.x, p.y] = t;
+                Room r = new Room();
+                if(t == RoomType.Monster)
+                {
+                    Monster m = new Monster();
+                    if (k % 2 == 0)
+                    {
+                        m.Name = "Vampire";
+                        m.Health = 30;
+                        m.AttackPower = 10;
+                    }
+                    else
+                    {
+                        m.Name = "Skeleton";
+                        m.Health = 20;
+                        m.AttackPower = 15;
+                    }
+                    r.SetMonster(m);
+
+                    grid[p.x, p.y] = r;
+                }
+                if (t == RoomType.Trap)
+                {
+                    Trap tr = new Trap();                  
+                    tr.Type = Trap.TrapType.Damage;
+                    tr.Damage = 20;
+                    r.SetTrap(tr);
+
+                    grid[p.x, p.y] = r;
+                }
+
             }
         }
 
