@@ -117,7 +117,10 @@ public class AdventurerMovementController : MonoBehaviour
         // Check if we should pause (e.g., after combat)
         if (pauseAfterCombat && adventurerAI.JustFoughtCombat)
         {
+            Animator playerAnim = adventurerAI.GetComponent<Animator>();
+            playerAnim.SetBool("is_fighting", true);
             PauseMovement(combatPauseTime);
+            playerAnim.SetBool("is_fighting", false);
         }
     }
 
