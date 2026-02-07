@@ -91,11 +91,20 @@ public class DungeonGrid : MonoBehaviour
 
     public Vector2Int WorldToGridPosition(Vector3 worldPos)
     {
-        return new Vector2Int(
-            Mathf.FloorToInt(worldPos.x / cellSize),
-            Mathf.FloorToInt(worldPos.y / cellSize)
-        );
+        // Convert world position to grid coords using nearest cell center snapping
+        float gx = worldPos.x / cellSize;
+        float gy = worldPos.y / cellSize;
+
+        int x = Mathf.RoundToInt(gx);
+        int y = Mathf.RoundToInt(gy);
+
+        // Clamp so clicks slightly outside don’t produce invalid indices
+        x = Mathf.Clamp(x, 0, width - 1);
+        y = Mathf.Clamp(y, 0, height - 1);
+
+        return new Vector2Int(x, y);
     }
+
 
     public void SwapRooms(Vector2Int a, Vector2Int b)
     {
