@@ -115,37 +115,45 @@ public class Room : MonoBehaviour
     {
         if (spriteRenderer == null) return;
 
-        // Fog-of-war: unrevealed rooms are dark
-        if (!IsRevealed)
+        // Base color by room type
+        Color baseColor = roomType switch
         {
-            // spriteRenderer.color = new Color(0.15f, 0.15f, 0.15f, 1f);
-            spriteRenderer.color = new Color(1f, 1f, 1f, 0.3f);
-            return;
-        }
-
-        // Simple color coding until you add sprite assets
-        spriteRenderer.color = roomType switch
-        {
-            RoomType.Start => Color.cyan,
-            RoomType.Goal => Color.magenta,
-            RoomType.Monster => Color.red,
-            RoomType.Trap => new Color(1f, 0.5f, 0f, 1f),
-            RoomType.Healing => Color.green,
+            RoomType.Start    => Color.cyan,
+            RoomType.Goal     => Color.magenta,
+            RoomType.Monster  => Color.red,
+            RoomType.Trap     => new Color(1f, 0.5f, 0f, 1f),
+            RoomType.Healing  => Color.green,
             RoomType.Treasure => Color.yellow,
-            _ => Color.white
+            _                 => Color.white
         };
 
         // Dim if monster is dead
         if (roomType == RoomType.Monster && Monster != null && Monster.Health <= 0)
+            baseColor = Color.gray;
+
+        // Occupied overrides (up to you whether this should override fog too)
+        if (IsOccupiedByAdventurers)
+            baseColor = Color.blue;
+
+        // Fog-of-war: unrevealed rooms keep their type color but are dark/transparent
+        if (!IsRevealed)
         {
-            spriteRenderer.color = Color.gray;
+            // Keep the type color, just make it see-through
+            baseColor.a = 0.7f;
+
+            // Optional: slightly wash toward gray so it reads as "hidden"
+            // baseColor = Color.Lerp(baseColor, Color.gray, 0.35f);
+        }
+        else
+        {
+            baseColor.a = 1f;
         }
 
-        if (IsOccupiedByAdventurers)
-            spriteRenderer.color = Color.blue;
+        spriteRenderer.color = baseColor;
 
         EnsureOutline();
     }
+
 
     private void EnsureOutline()
     {

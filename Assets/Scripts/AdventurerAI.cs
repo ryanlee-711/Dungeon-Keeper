@@ -57,6 +57,10 @@ public class AdventurerAI : MonoBehaviour
     public bool IsInDesperateMode => isDesperateMode;
     public bool JustFoughtCombat => justFoughtCombat;
 
+    private bool hasReachedGoal = false;
+
+    public bool HasReachedGoal => hasReachedGoal;
+
     void Awake()
     {
         Instance = this;
@@ -213,13 +217,21 @@ public class AdventurerAI : MonoBehaviour
 
     public void MoveToNextRoom()
     {
-        turnsSinceLastReplan++;
-        justFoughtCombat = false; // Reset flag
+        if (hasReachedGoal) return;
 
-        // Update AI state based on health
+        // If we are already on the goal, stop here (and only fire once)
+        if (currentPosition == dungeonGrid.GoalPosition)
+        {
+            hasReachedGoal = true;
+            ReachGoal();
+            return;
+        }
+
+        turnsSinceLastReplan++;
+        justFoughtCombat = false;
+
         UpdateAIState();
 
-        // Choose next move with personality/difficulty modifiers
         Vector2Int nextMove = ChooseNextMove();
 
         if (nextMove == currentPosition)
@@ -228,23 +240,28 @@ public class AdventurerAI : MonoBehaviour
             return;
         }
 
-        if (currentPosition == dungeonGrid.GoalPosition)
-        {
-            ReachGoal();
-            return;
-        }
-
+        // Reveal before moving (fine)
         RevealRoom(nextMove);
 
+        // Move into the next cell
         SetOccupancy(currentPosition, false);
         lastPosition = currentPosition;
         currentPosition = nextMove;
         SetOccupancy(currentPosition, true);
 
+        // If we stepped onto the goal, stop ON it and end immediately
+        if (currentPosition == dungeonGrid.GoalPosition)
+        {
+            hasReachedGoal = true;
+            ReachGoal();
+            return;
+        }
+
         Room nextRoom = dungeonGrid.GetRoom(nextMove.x, nextMove.y);
         if (nextRoom != null)
             HandleRoomInteraction(nextRoom);
     }
+
 
     private void UpdateAIState()
     {
