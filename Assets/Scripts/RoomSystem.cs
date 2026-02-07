@@ -9,7 +9,8 @@ public enum RoomType
     Start,
     Goal,
     Treasure,
-    Healing
+    Healing,
+    Blocked
 }
 
 public class Room : MonoBehaviour
@@ -19,6 +20,12 @@ public class Room : MonoBehaviour
 
     [SerializeField] private bool drawOutline = true;
     [SerializeField] private float outlineWidth = 0.05f;
+
+    [SerializeField] private Sprite blockedSprite;
+
+    [SerializeField] private GameObject monsterVisualRoot; // drag MonsterVisual here
+    [SerializeField] private SpriteRenderer monsterVisualRenderer; // drag its SpriteRenderer
+    private Sprite normalSprite;
 
     private LineRenderer outline;
 
@@ -33,6 +40,33 @@ public class Room : MonoBehaviour
     // Store original monster for respawning
     private Monster originalMonster;
 
+    private void CacheRenderer()
+    {
+        if (spriteRenderer != null) return;
+
+        // Try same object first
+        spriteRenderer = GetComponent<SpriteRenderer>();
+
+        // If sprite is on a child (very common), grab it
+        if (spriteRenderer == null)
+            spriteRenderer = GetComponentInChildren<SpriteRenderer>(true);
+    }
+
+    private void Awake()
+    {
+        CacheRenderer();
+    }
+
+    private void OnValidate()
+    {
+        CacheRenderer();
+    }
+
+    private void Reset()
+    {
+        CacheRenderer();
+    }
+
     public bool CanBeSwapped()
     {
         return roomType != RoomType.Start &&
@@ -41,14 +75,18 @@ public class Room : MonoBehaviour
     }
 
     public void RefreshVisual() => UpdateVisuals();
-    private void OnValidate()
-    {
-        if (spriteRenderer == null)
-            spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+    // private void OnValidate()
+    // {
+    //     if (spriteRenderer == null)
+    //         spriteRenderer = GetComponent<SpriteRenderer>();
+    // }
 
     public void Initialize(Vector2Int position, RoomType type)
     {
+        CacheRenderer();
+        if (spriteRenderer != null && normalSprite == null)
+            normalSprite = spriteRenderer.sprite;
+
         GridPosition = position;
         roomType = type;
         EnsureOutline();
@@ -106,16 +144,27 @@ public class Room : MonoBehaviour
         UpdateVisuals();
     }
 
-    private void Reset()
-    {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+    // private void Reset()
+    // {
+    //     spriteRenderer = GetComponent<SpriteRenderer>();
+    // }
 
     private void UpdateVisuals()
     {
         if (spriteRenderer == null) return;
 
         // Base color by room type
+         if (roomType == RoomType.Blocked)
+        {
+            // Debug.Log($"[BLOCKED] Room {name} renderer={spriteRenderer.name} color={spriteRenderer.color} sprite={spriteRenderer.sprite}", this);
+            if (blockedSprite != null) spriteRenderer.sprite = blockedSprite;
+            spriteRenderer.color = new Color(0f, 0f, 0f, 1f);
+            return;
+        } else
+        {
+            if (normalSprite != null) spriteRenderer.sprite = normalSprite;
+        }
+        
         Color baseColor = roomType switch
         {
             RoomType.Start    => Color.cyan,
@@ -124,6 +173,7 @@ public class Room : MonoBehaviour
             RoomType.Trap     => new Color(1f, 0.5f, 0f, 1f),
             RoomType.Healing  => Color.green,
             RoomType.Treasure => Color.yellow,
+            // RoomType.Blocked  => Color.black,
             _                 => Color.white
         };
 
@@ -184,6 +234,23 @@ public class Room : MonoBehaviour
 
         outline.startColor = Color.black;
         outline.endColor = Color.black;
+    }
+
+    public void ShowMonster(GameObject monsterPrefab)
+    {
+        if (monsterVisualRoot == null || monsterVisualRenderer == null) return;
+
+        // Pull the sprite from the prefab (or from a SpriteRenderer on it)
+        var sr = monsterPrefab.GetComponentInChildren<SpriteRenderer>();
+        if (sr != null) monsterVisualRenderer.sprite = sr.sprite;
+
+        monsterVisualRoot.SetActive(true);
+    }
+
+    public void HideMonster()
+    {
+        if (monsterVisualRoot != null)
+            monsterVisualRoot.SetActive(false);
     }
 
 }

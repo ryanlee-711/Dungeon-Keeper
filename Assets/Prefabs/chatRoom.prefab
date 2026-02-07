@@ -108,3 +108,4 @@ MonoBehaviour:
   spriteRenderer: {fileID: 2427898672897848233}
   drawOutline: 1
   outlineWidth: 0.05
+  blockedSprite: {fileID: 21300000, guid: a1860a455881aa54f99521f08016b17a, type: 3}

@@ -528,6 +528,9 @@ public class AdventurerAI : MonoBehaviour
         Room room = dungeonGrid.GetRoom(to.x, to.y);
         if (room == null) return float.MaxValue;
 
+        if (room.Type == RoomType.Blocked)
+            return float.MaxValue;
+
         if (IsRoomRevealed(to))
         {
             switch (room.Type)
@@ -704,14 +707,25 @@ public class AdventurerAI : MonoBehaviour
                         break;
                     }
 
-                    StartCombat(room.Monster);
+                    // room.ShowMonster(room.Monster.Sprite);
+
+                    StartCoroutine(FightMonsterRoutine(room));
+
+                    // StartCombat(room.Monster);
 
                     // Only try to animate if there's an Animator
-                    var monsterAnim = room.Monster.Sprite.GetComponent<Animator>();
-                    if (monsterAnim != null)
-                    {
-                        monsterAnim.SetTrigger("fight"); // recommended instead of true then false
-                    }
+                    // var monsterAnim = room.Monster.Sprite.GetComponent<Animator>();
+                    // if (monsterAnim != null)
+                    // {
+                    //     monsterAnim.SetTrigger("fight"); // recommended instead of true then false
+                    // }
+                    // Vector3 spawnPos = room.transform.position + new Vector3(0, 0, -0.1f);
+                    // GameObject visual = GameObject.Instantiate(room.Monster.Sprite, spawnPos, Quaternion.identity, room.transform);
+
+                    // if (room.Monster.Health <= 0)
+                    // {
+                    //     room.HideMonster();
+                    // }
 
                     break;
                 }
@@ -801,6 +815,29 @@ public class AdventurerAI : MonoBehaviour
         }
     }
 
+    private System.Collections.IEnumerator FightMonsterRoutine(Room room)
+    {
+        var prefab = room.Monster.Sprite;
+        Vector3 spawnPos = room.transform.position + new Vector3(0, 0, -0.1f);
+
+        // Spawn visible object
+        GameObject visual = Instantiate(prefab, spawnPos, Quaternion.identity, room.transform);
+
+        yield return null; // render a frame
+        yield return new WaitForSeconds(0.25f);
+
+        StartCombat(room.Monster);
+
+        yield return null;
+
+        if (room.Monster != null && room.Monster.Health <= 0)
+        {
+            yield return new WaitForSeconds(0.25f);
+            Destroy(visual);
+        }
+    }
+
+
     #endregion
 }
 
@@ -860,6 +897,7 @@ public class DStarPriorityQueue
     {
         elements.Clear();
     }
+
 }
 
 #endregion

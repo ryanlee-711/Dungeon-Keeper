@@ -17,6 +17,8 @@ public class DungeonGrid : MonoBehaviour
     [SerializeField] private int healRooms = 1;
     [SerializeField] private int treasureRooms = 0;
 
+    [SerializeField] private int blockedRooms = 10;
+
     [SerializeField] private GameObject vampire;
 
     [SerializeField] private GameObject skeleton;
@@ -55,6 +57,13 @@ public class DungeonGrid : MonoBehaviour
         if (roomParent == null) roomParent = transform;
 
         var roomTypes = GenerateRoomTypes();
+
+        int bc = 0;
+        for (int x = 0; x < width; x++)
+        for (int y = 0; y < height; y++)
+            if (roomTypes[x, y] == RoomType.Blocked) bc++;
+
+        // Debug.Log($"[DungeonGrid] blockedRooms requested={blockedRooms}, generated={bc}");
 
         for (int x = 0; x < width; x++)
         {
@@ -99,7 +108,7 @@ public class DungeonGrid : MonoBehaviour
                 }
                 else
                 {
-                    // If no prefab is assigned, create a simple GameObject
+                    // If no prefa is assigned, create a simple GameObject
                     var go = new GameObject($"Room_{x}_{y}");
                     go.transform.SetParent(roomParent);
                     go.transform.position = GridToWorldPosition(x, y);
@@ -219,7 +228,7 @@ public class DungeonGrid : MonoBehaviour
             (candidates[i], candidates[j]) = (candidates[j], candidates[i]);
         }
 
-        int needed = monsterRooms + trapRooms + healRooms + treasureRooms;
+        int needed = monsterRooms + trapRooms + healRooms + treasureRooms + blockedRooms;
         if (needed > candidates.Count)
         {
             Debug.LogWarning($"Requested {needed} special rooms, but only {candidates.Count} cells available. Clamping.");
@@ -239,6 +248,7 @@ public class DungeonGrid : MonoBehaviour
         }
 
         // Place in whatever priority order you want
+        Place(RoomType.Blocked, blockedRooms);
         Place(RoomType.Healing, healRooms);
         Place(RoomType.Monster, monsterRooms);
         Place(RoomType.Trap, trapRooms);
