@@ -17,6 +17,12 @@ public class DungeonGrid : MonoBehaviour
     [SerializeField] private int healRooms = 1;
     [SerializeField] private int treasureRooms = 0;
 
+    [SerializeField] private GameObject vampire;
+
+    [SerializeField] private GameObject skeleton;
+
+
+
     private Room[,] grid;
     private Vector2Int startPosition;
     private Vector2Int goalPosition;
@@ -62,7 +68,34 @@ public class DungeonGrid : MonoBehaviour
                 if (roomPrefab != null)
                 {
                     room = Instantiate(roomPrefab, GridToWorldPosition(x, y), Quaternion.identity, roomParent);
- 
+                    if(type == RoomType.Monster)
+                    {
+                        if (Random.Range(0,2) == 0)
+                        {
+                            Monster m = new Monster();
+                            m.Name = "Vampire";
+                            m.Health = 30;
+                            m.AttackPower = 10;
+                            m.Sprite = vampire;
+                            room.SetMonster(m);
+                        }
+                        else
+                        {
+                            Monster m = new Monster();
+                            m.Name = "Skeleton";
+                            m.Health = 20;
+                            m.AttackPower = 15;
+                            m.Sprite = skeleton;
+                            room.SetMonster(m);
+                        }
+                    }
+                    if (type == RoomType.Trap)
+                    {
+                        Trap tr = new Trap();                  
+                        tr.Type = Trap.TrapType.Damage;
+                        tr.Damage = 20;
+                        room.SetTrap(tr);
+                    }
                 }
                 else
                 {
@@ -202,33 +235,6 @@ public class DungeonGrid : MonoBehaviour
             {
                 var p = candidates[idx++];
                 types[p.x, p.y] = t;
-                Room r = new Room();
-                r.roomType = t;
-                if(t == RoomType.Monster)
-                {
-                    Monster m = new Monster();
-                    if (k % 2 == 0)
-                    {
-                        m.Name = "Vampire";
-                        m.Health = 30;
-                        m.AttackPower = 10;
-                    }
-                    else
-                    {
-                        m.Name = "Skeleton";
-                        m.Health = 20;
-                        m.AttackPower = 15;
-                    }
-                    r.SetMonster(m);
-                }
-                if (t == RoomType.Trap)
-                {
-                    Trap tr = new Trap();                  
-                    tr.Type = Trap.TrapType.Damage;
-                    tr.Damage = 20;
-                    r.SetTrap(tr);
-                }
-                grid[p.x, p.y] = r;
             }
         }
 

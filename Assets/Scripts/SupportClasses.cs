@@ -30,12 +30,12 @@ public class PriorityQueue<T>
 
 // Monster data
 [System.Serializable]
-public class Monster : MonoBehaviour
+public class Monster //: Mono Behavior
 {
     public string Name;
     public int Health;
     public int AttackPower;
-    public Sprite Sprite;
+    public GameObject Sprite;
 
     public void TakeDamage(int damage)
     {

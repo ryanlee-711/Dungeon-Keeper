@@ -101,6 +101,7 @@ public class RoomManipulationSystem : MonoBehaviour
 
         // Perform swap
         dungeonGrid.SwapRooms(selectedPosition, targetPosition);
+        
 
         // Re-plan AI if present
         if (AdventurerAI.Instance != null)

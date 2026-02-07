@@ -48,6 +48,8 @@ public class PlayerManager : MonoBehaviour
     public int ManaRegenUpgradeLevel => manaRegenUpgradeLevel;
     public int MonsterPowerUpgradeLevel => monsterPowerUpgradeLevel;
 
+    private float manaRegenBuffer = 0f;
+
     void Awake()
     {
         if (Instance == null)
@@ -70,9 +72,17 @@ public class PlayerManager : MonoBehaviour
         // Regenerate mana
         if (currentMana < maxMana)
         {
-            float regenAmount = manaRegenRate * Time.deltaTime;
-            currentMana = Mathf.Min(currentMana + Mathf.FloorToInt(regenAmount), maxMana);
-            OnManaChanged?.Invoke(currentMana, maxMana);
+            // float regenAmount = manaRegenRate * Time.deltaTime;
+            // currentMana = Mathf.Min(currentMana + Mathf.FloorToInt(regenAmount), maxMana);
+            // OnManaChanged?.Invoke(currentMana, maxMana);
+            manaRegenBuffer += manaRegenRate * Time.deltaTime;
+            int add = Mathf.FloorToInt(manaRegenBuffer);
+            if (add > 0)
+            {
+                manaRegenBuffer -= add;
+                currentMana = Mathf.Min(currentMana + add, maxMana);
+                OnManaChanged?.Invoke(currentMana, maxMana);
+            }
         }
     }
 
